@@ -1,0 +1,15 @@
+package com.employee.testcase;
+
+import static org.junit.Assert.*;
+import com.employee.dao.implementation.*;
+
+import org.junit.Test;
+
+public class AddEmployeeTest {
+ DaoImplementation dao= new DaoImplementation();
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

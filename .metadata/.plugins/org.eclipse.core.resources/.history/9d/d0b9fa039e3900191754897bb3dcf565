@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+     
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<%@page import="com.employee.dao.implementation.*,com.employee.model.*,java.util.*"%>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
+		<%@page import="com.employee.dao.implementation.*,com.employee.model.*,java.util.*"%>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
+<h1>View All Employee</h1>
+<% Pojo p=new Pojo(); %>
+<% List<Pojo> accountList=p.showAllEmployee();%>
+<%request.setAttribute("accounts",accountList);%>
+<c:forEach var="accountName" items="${requestScope.accounts}" >
+ 
+            <tr>
+                <td>${accountName.employeeId}</td>
+                <td>${accountName.employeeName}</td>
+                
+             </tr>
+   </c:forEach> 
+</html>

@@ -1,0 +1,36 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String [] args)
+    {
+        Scanner s = new Scanner(System.in);
+         String s1 = s.next();
+        String s2 = s.next();
+         Set<Character> list = new TreeSet<>();
+        for (int i = 0; i < s1.length(); i++) {
+			list.add(s1.charAt(i));
+			
+		}
+        Set<Character> list1 = new TreeSet<>();
+        for (int i = 0; i < s2.length(); i++) {
+			list1.add(s2.charAt(i));
+			
+		}
+        String temp = list;
+//        for(int i=0;i<list.size();i++)
+//        {
+//        	int temp = list.
+//        }
+//       
+       
+        System.out.println(list);
+        System.out.println(list1);
+    }
+}

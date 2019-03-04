@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-apps>
+<servlet-name>hs</servlet-name>
+<servlet-class>index</servlet-class>
+<servletmapping>
+<servlet-name>hs</servlet-name>
+<url-pattern>Add</url-pattern>
+</servletmapping>
+
+<servlet-name>hs</servlet-name>
+<servlet-class>index</servlet-class>
+<servletmapping>
+<servlet-name>hs</servlet-name>
+<url-pattern>Sub</url-pattern>
+</servletmapping>
+
+
+
+
+
+</web-apps>

@@ -1,0 +1,28 @@
+package com.employee.model;
+
+public class Pojo {
+	
+	private int employeeId;
+	private String employeeName;
+	private float employeeSalary;
+	public String getEmployeeName() {
+		return employeeName;
+	}
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	
+	public float getEmployeeSalary() {
+		return employeeSalary;
+	}
+	public void setEmployeeSalary(int employeeSalary) {
+		this.employeeId = employeeSalary;
+	}
+
+}

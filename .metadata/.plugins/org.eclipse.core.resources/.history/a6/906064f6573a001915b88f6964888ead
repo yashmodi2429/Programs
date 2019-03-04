@@ -1,0 +1,15 @@
+package com.employee.testcase;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import com.employee.dao.implementation.*;
+
+public class AddProjectTest {
+
+	@Test
+	public void test() {
+		
+	}
+
+}

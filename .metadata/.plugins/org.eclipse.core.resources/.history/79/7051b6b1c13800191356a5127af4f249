@@ -1,0 +1,32 @@
+package com.employee.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import com.employee.model.*;
+/**
+ * Servlet implementation class UpdateEmployee
+ */
+@WebServlet("/UpdateEmployee")
+public class UpdateEmployee extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+   
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Update servlet");
+		int id = Integer.parseInt("id");
+		String name = request.getParameter("name");
+		float salary = Float.parseFloat("salary");
+		System.out.println(salary);
+		Pojo p = new Pojo();
+		p.setEmployeeId(id);
+		p.setEmployeeName(name);
+		p.setEmployeeSalary(salary);
+		
+		System.out.println(p.getEmployeeSalary());
+	}
+
+}

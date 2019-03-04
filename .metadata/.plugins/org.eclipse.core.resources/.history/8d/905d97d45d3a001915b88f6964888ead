@@ -1,0 +1,24 @@
+package com.employee.testcase;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.employee.dao.implementation.DaoImplementation;
+import com.employee.model.Pojo;
+
+public class ShowEmployeeTest {
+
+	@Test
+	public void test() {
+		DaoImplementation dao = new DaoImplementation();
+		
+			Pojo p = new Pojo();
+			p.setEmployeeId(7);
+			int count =  dao.showEmployeeProject(p);
+p);
+			assertEquals(false,count);
+		
+	}
+
+}

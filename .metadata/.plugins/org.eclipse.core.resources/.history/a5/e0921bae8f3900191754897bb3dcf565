@@ -1,0 +1,37 @@
+package com.employee.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.employee.model.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import com.employee.dao.implementation.*;
+/**
+ * Servlet implementation class ShowAllEmployee
+ */
+@WebServlet("/ShowAllEmployee")
+public class ShowAllEmployee extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Pojo p = new Pojo();
+		DaoImplementation dao = new DaoImplementation();
+		ArrayList<Pojo> count = (ArrayList<Pojo>) dao.showAllEmployee(p);
+		if(count.isEmpty())
+		{
+			response.sendRedirect("error.jsp");
+		}else {
+			
+			 request.setAttribute("employeedata", count);
+			 request.getRequestDispatcher("showalldetails.jsp").forward(request, response);	
+		}
+		
+		
+	}
+
+	
+}

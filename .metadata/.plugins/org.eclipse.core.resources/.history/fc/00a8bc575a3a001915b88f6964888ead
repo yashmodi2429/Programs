@@ -1,0 +1,15 @@
+package com.employee.testcase;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DeleteEmployeeTest {
+
+	@Test
+	public void test() {
+		Pojo p = new Pojo();
+		
+	}
+
+}
